@@ -10,6 +10,7 @@ This Code Book explains the tidy data set produced by the run_analysis.R script.
 This is the identifier of the subject, represented as an int with range [1,30]
 ### Activity
 This is a description of the activity, represented as one of the following factors:
+####
 *Standing
 *Sitting
 *Laying
@@ -17,8 +18,8 @@ This is a description of the activity, represented as one of the following facto
 *Walking_Downstairs
 *Walking_Upstairs
 ### Variable
-This is a description of the variable that is measured. Each description is composed of a combination of the following descriptors.
-#### Variable Descriptions
+This is a description of the variable that is measured. Each description is composed of a combination of the following descriptors separated by underscores (_).
+####
 | Descriptor               | Meaning                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------- |
 | Frequency or Time        | Identifies if the measurement is in time or frequency domain                        |
