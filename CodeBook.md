@@ -10,7 +10,6 @@ This Code Book explains the tidy data set produced by the run_analysis.R script.
 This is the identifier of the subject, represented as an int with range [1,30]
 ### Activity
 This is a description of the activity, represented as one of the following factors:
-####
 * Standing
 * Sitting
 * Laying
