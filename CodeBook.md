@@ -18,15 +18,15 @@ This is a description of the activity, represented as one of the following facto
 *Walking_Upstairs
 ### Variable
 This is a description of the variable that is measured. Each description is composed of a combination of the following descriptors.
-| Descriptor               | Meaning                         |
-| ------------------------ | ------------------------------- |
-| Frequency or Time        | Identifies if the measurement is in time or frequency domain           |
+| Descriptor               | Meaning                                                                             |
+| ------------------------ | ----------------------------------------------------------------------------------- |
+| Frequency or Time        | Identifies if the measurement is in time or frequency domain                        |
 | Body or Gravity          | Acceleration signals have been separated into body and gravity acceleration signals |
-| Acclerometer or Gyro     | Measuremeants are obtained from accelerometers or gyroscopes  |
-| Jerk                     | Indicates a jerk signal derived from linear acceleration and angular velocity |
-| Magnitude                | The magnitude of three-dimensional signals |
-| X-axis, Y-axis or Z-axis | Identifies the axis for 3-axial signals |
-| Mean or StdDev           | mean() or std() measurement |
+| Acclerometer or Gyro     | Measuremeants are obtained from accelerometers or gyroscopes                        |
+| Jerk                     | Indicates a jerk signal derived from linear acceleration and angular velocity       |
+| Magnitude                | The magnitude of three-dimensional signals                                          |
+| X-axis, Y-axis or Z-axis | Identifies the axis for 3-axial signals                                             |
+| Mean or StdDev           | mean() or std() measurement                                                         |
 ### Value
 The value of the measurement for a given subject and activity.
 
