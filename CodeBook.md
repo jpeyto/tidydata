@@ -18,7 +18,7 @@ This is a description of the activity, represented as one of the following facto
 *Walking_Upstairs
 ### Variable
 This is a description of the variable that is measured. Each description is composed of a combination of the following descriptors.
-## Variable Descriptions
+#### Variable Descriptions
 | Descriptor               | Meaning                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------- |
 | Frequency or Time        | Identifies if the measurement is in time or frequency domain                        |
