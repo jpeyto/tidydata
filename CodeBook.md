@@ -11,14 +11,14 @@ This is the identifier of the subject, represented as an int with range [1,30]
 ### Activity
 This is a description of the activity, represented as one of the following factors:
 ####
-*Standing
-*Sitting
-*Laying
-*Walking
-*Walking_Downstairs
-*Walking_Upstairs
+* Standing
+* Sitting
+* Laying
+* Walking
+* Walking_Downstairs
+* Walking_Upstairs
 ### Variable
-This is a description of the variable that is measured. Each description is composed of a combination of the following descriptors separated by underscores (_).
+This is a description of the variable that is measured, made up of 66 unique factors. Each description is composed of a combination of the following descriptors separated by underscores (_).
 ####
 | Descriptor               | Meaning                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------- |
