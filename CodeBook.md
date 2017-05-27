@@ -2,6 +2,7 @@
 ## Human Activity Recognition Using Smartphones 
 ### A tidy data set
 This Code Book explains the tidy data set produced by the run_analysis.R script.
+The data contains only mean and standard deviation measurements (i.e. mean() and std()) from the Human Activity Recognition Using Smartphones data set.
 ##  Data Frame
 | Subject       | Activity	 | Variable  | Value  |
 | ------------- | -------------- | ----- | ------ |
