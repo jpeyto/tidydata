@@ -1,7 +1,7 @@
 # README
 ## run_analysis.R
 This script contains the function run_analysis().
-The function returns a tidy data set of mean() and std() variables from the Human ActivityvRecognitionvUsing Smartphones data set.
+The function returns a tidy data set of mean() and std() variables from the Human Activity Recognition Using Smartphones data set.
 In addition, the function writes the file "tidydata_mean.txt" to the working directory. 
 The data set is located here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 ## The tidy data set
