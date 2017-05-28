@@ -11,7 +11,8 @@ The data contains only mean and standard deviation measurements (i.e. mean() and
 This is the identifier of the subject, represented as an int with range [1,30]
 ### Activity
 This is a description of the activity, represented as one of the following factors:
- Activity Discription      | Meaning                                  |
+####
+| Activity Discription     | Meaning                                  |
 | ------------------------ | ---------------------------------------- |
 | Standing                 | Subject is standing up                   |
 | Sitting                  | Subject is sitting down                  |
