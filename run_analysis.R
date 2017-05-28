@@ -97,5 +97,6 @@ run_analysis <-  function() {
   write.table(mean_data, file="tidydata_mean.txt", row.name=FALSE)
   
   # Output tidy data set
+  colnames(dfmelt)<-c("Subject", "Activity", "Variable", "Value")
   dfmelt
 }
