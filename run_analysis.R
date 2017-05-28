@@ -32,9 +32,9 @@ run_analysis <-  function() {
   y_train<-read.table("./UCI HAR Dataset/train/y_train.txt")
   
   # Find required mean and standard deviation variables from the features vector
-  mean<-grep("\\bmean()\\b",features[,2])
+  mean1<-grep("\\bmean()\\b",features[,2])
   std<-grep("\\bstd()\\b",features[,2])
-  cols<-unique(c(mean,std))
+  cols<-unique(c(mean1,std))
   cols<-cols[order(cols)]
   
   # Combine test and train data
@@ -73,28 +73,19 @@ run_analysis <-  function() {
   # Create tidy data set with subject and activity identifiers as columns, a column identifying the variable and a column for the value
   dfmelt<-melt(df, id.vars=c("Subject", "Activity"))
   
-  #dfmelt<-mutate(dfmelt, variable=variable)
-
   # Calculate the mean of each variable for each activity
   activity_mean<-sapply(unique(dfmelt$Activity), function(x) {y <- filter(dfmelt, Activity==x); sapply(unique(dfmelt$variable), function(x) mean(y[y$variable==x,4]))})
   activity_mean<-as.data.frame(activity_mean)  
   colnames(activity_mean)<-paste(unique(dfmelt$Activity),"Activity_Mean", sep="_")
   rownames(activity_mean)<-unique(dfmelt$variable)
 
-  # Calculate the mean of each variable for each subject
-  subject_mean<-sapply(unique(dfmelt$Subject), function(x) {y <- filter(dfmelt, Subject==x); sapply(unique(dfmelt$variable), function(x) mean(y[y$variable==x,4]))})
-  subject_mean<-as.data.frame(subject_mean)
-  colnames<-unique(dfmelt$Subject)
-  colnames(subject_mean)<-colnames
-  colnames<-colnames[order(colnames)]
-  subject_mean<-subject_mean[,colnames]
-  colnames(subject_mean)<-paste("Subject",colnames,"Mean", sep="_")
-  rownames(subject_mean)<-unique(dfmelt$variable)
+  sapply(unique(dfmelt$Activity), function(x) {y <- filter(dfmelt, Activity==x); 
+  sapply(unique(dfmelt$Subject),  function(x) {z <- filter(y, Subject==x); 
+  sapply(unique(dfmelt$variable), function(x) mean(z[z$variable==x,4]))})})
 
-  # Write mean to tidydata_mean.txt
-  mean_data<-data.frame(activity_mean, subject_mean)
-  mean_data<-rownames_to_column(mean_data,"Variable")
-  write.table(mean_data, file="tidydata_mean.txt", row.name=FALSE)
+  # Calcualte mean for each activity and subject
+  dc<-dcast(dfmelt, Subject + Activity ~ variable, mean)
+  write.table(dc, file="tidydata_mean.txt", row.name=FALSE)
   
   # Output tidy data set
   colnames(dfmelt)<-c("Subject", "Activity", "Variable", "Value")
