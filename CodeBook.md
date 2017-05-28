@@ -11,12 +11,14 @@ The data contains only mean and standard deviation measurements (i.e. mean() and
 This is the identifier of the subject, represented as an int with range [1,30]
 ### Activity
 This is a description of the activity, represented as one of the following factors:
-* Standing
-* Sitting
-* Laying
-* Walking
-* Walking_Downstairs
-* Walking_Upstairs
+ Activity Discription      | Meaning                                  |
+| ------------------------ | ---------------------------------------- |
+| Standing                 | Subject is standing up                   |
+| Sitting                  | Subject is sitting down                  |
+| Laying                   | Subject is laying down                   |
+| Walking                  | Subject is walking (on flat surface)     |
+| Walking_Downstairs       | Subject is walking down a set of stairs  |
+| Walking_Upstairs         | Subject is is up a set of stairs         |
 ### Variable
 Each variable is described by one of 66 unique factors. Each factor is composed of a combination of the following descriptors separated by underscores (_).
 ####
@@ -30,72 +32,72 @@ Each variable is described by one of 66 unique factors. Each factor is composed 
 | X-axis, Y-axis or Z-axis | Identifies the axis for 3-axial signals                                             |
 | Mean or StdDev           | mean() or std() measurement                                                         |
 #### Variable Descriptions
-*Time_Body_Accelerometer_Mean_X-axis
-*Time_Body_Accelerometer_Mean_Y-axis
-*Time_Body_Accelerometer_Mean_Z-axis
-*Time_Body_Accelerometer_StdDev_X-axis
-*Time_Body_Accelerometer_StdDev_Y-axis
-*Time_Body_Accelerometer_StdDev_Z-axis
-*TimeGravity_Accelerometer_Mean_X-axis
-*TimeGravity_Accelerometer_Mean_Y-axis
-*TimeGravity_Accelerometer_Mean_Z-axis
-*TimeGravity_Accelerometer_StdDev_X-axis
-*TimeGravity_Accelerometer_StdDev_Y-axis
-*TimeGravity_Accelerometer_StdDev_Z-axis
-*Time_Body_Accelerometer_Jerk_Mean_X-axis
-*Time_Body_Accelerometer_Jerk_Mean_Y-axis
-*Time_Body_Accelerometer_Jerk_Mean_Z-axis
-*Time_Body_Accelerometer_Jerk_StdDev_X-axis
-*Time_Body_Accelerometer_Jerk_StdDev_Y-axis
-*Time_Body_Accelerometer_Jerk_StdDev_Z-axis
-*Time_Body_Gyro_Mean_X-axis
-*Time_Body_Gyro_Mean_Y-axis
-*Time_Body_Gyro_Mean_Z-axis
-*Time_Body_Gyro_StdDev_X-axis
-*Time_Body_Gyro_StdDev_Y-axis
-*Time_Body_Gyro_StdDev_Z-axis
-*Time_Body_Gyro_Jerk_Mean_X-axis
-*Time_Body_Gyro_Jerk_Mean_Y-axis
-*Time_Body_Gyro_Jerk_Mean_Z-axis
-*Time_Body_Gyro_Jerk_StdDev_X-axis
-*Time_Body_Gyro_Jerk_StdDev_Y-axis
-*Time_Body_Gyro_Jerk_StdDev_Z-axis
-*Time_Body_Accelerometer_Magnitude_Mean
-*Time_Body_Accelerometer_Magnitude_StdDev
-*TimeGravity_Accelerometer_Magnitude_Mean
-*TimeGravity_Accelerometer_Magnitude_StdDev
-*Time_Body_Accelerometer_Jerk_Magnitude_Mean
-*Time_Body_Accelerometer_Jerk_Magnitude_StdDev
-*Time_Body_Gyro_Magnitude_Mean
-*Time_Body_Gyro_Magnitude_StdDev
-*Time_Body_Gyro_Jerk_Magnitude_Mean
-*Time_Body_Gyro_Jerk_Magnitude_StdDev
-*Frequency_Body_Accelerometer_Mean_X-axis
-*Frequency_Body_Accelerometer_Mean_Y-axis
-*Frequency_Body_Accelerometer_Mean_Z-axis
-*Frequency_Body_Accelerometer_StdDev_X-axis
-*Frequency_Body_Accelerometer_StdDev_Y-axis
-*Frequency_Body_Accelerometer_StdDev_Z-axis
-*Frequency_Body_Accelerometer_Jerk_Mean_X-axis
-*Frequency_Body_Accelerometer_Jerk_Mean_Y-axis
-*Frequency_Body_Accelerometer_Jerk_Mean_Z-axis
-*Frequency_Body_Accelerometer_Jerk_StdDev_X-axis
-*Frequency_Body_Accelerometer_Jerk_StdDev_Y-axis
-*Frequency_Body_Accelerometer_Jerk_StdDev_Z-axis
-*Frequency_Body_Gyro_Mean_X-axis
-*Frequency_Body_Gyro_Mean_Y-axis
-*Frequency_Body_Gyro_Mean_Z-axis
-*Frequency_Body_Gyro_StdDev_X-axis
-*Frequency_Body_Gyro_StdDev_Y-axis
-*Frequency_Body_Gyro_StdDev_Z-axis
-*Frequency_Body_Accelerometer_Magnitude_Mean
-*Frequency_Body_Accelerometer_Magnitude_StdDev
-*Frequency_BodyBody_Accelerometer_Jerk_Magnitude_Mean
-*Frequency_BodyBody_Accelerometer_Jerk_Magnitude_StdDev
-*Frequency_BodyBody_Gyro_Magnitude_Mean
-*Frequency_BodyBody_Gyro_Magnitude_StdDev
-*Frequency_BodyBody_Gyro_Jerk_Magnitude_Mean
-*Frequency_BodyBody_Gyro_Jerk_Magnitude_StdDev
+* Time_Body_Accelerometer_Mean_X-axis
+* Time_Body_Accelerometer_Mean_Y-axis
+* Time_Body_Accelerometer_Mean_Z-axis
+* Time_Body_Accelerometer_StdDev_X-axis
+* Time_Body_Accelerometer_StdDev_Y-axis
+* Time_Body_Accelerometer_StdDev_Z-axis
+* TimeGravity_Accelerometer_Mean_X-axis
+* TimeGravity_Accelerometer_Mean_Y-axis
+* TimeGravity_Accelerometer_Mean_Z-axis
+* TimeGravity_Accelerometer_StdDev_X-axis
+* TimeGravity_Accelerometer_StdDev_Y-axis
+* TimeGravity_Accelerometer_StdDev_Z-axis
+* Time_Body_Accelerometer_Jerk_Mean_X-axis
+* Time_Body_Accelerometer_Jerk_Mean_Y-axis
+* Time_Body_Accelerometer_Jerk_Mean_Z-axis
+* Time_Body_Accelerometer_Jerk_StdDev_X-axis
+* Time_Body_Accelerometer_Jerk_StdDev_Y-axis
+* Time_Body_Accelerometer_Jerk_StdDev_Z-axis
+* Time_Body_Gyro_Mean_X-axis
+* Time_Body_Gyro_Mean_Y-axis
+* Time_Body_Gyro_Mean_Z-axis
+* Time_Body_Gyro_StdDev_X-axis
+* Time_Body_Gyro_StdDev_Y-axis
+* Time_Body_Gyro_StdDev_Z-axis
+* Time_Body_Gyro_Jerk_Mean_X-axis
+* Time_Body_Gyro_Jerk_Mean_Y-axis
+* Time_Body_Gyro_Jerk_Mean_Z-axis
+* Time_Body_Gyro_Jerk_StdDev_X-axis
+* Time_Body_Gyro_Jerk_StdDev_Y-axis
+* Time_Body_Gyro_Jerk_StdDev_Z-axis
+* Time_Body_Accelerometer_Magnitude_Mean
+* Time_Body_Accelerometer_Magnitude_StdDev
+* TimeGravity_Accelerometer_Magnitude_Mean
+* TimeGravity_Accelerometer_Magnitude_StdDev
+* Time_Body_Accelerometer_Jerk_Magnitude_Mean
+* Time_Body_Accelerometer_Jerk_Magnitude_StdDev
+* Time_Body_Gyro_Magnitude_Mean
+* Time_Body_Gyro_Magnitude_StdDev
+* Time_Body_Gyro_Jerk_Magnitude_Mean
+* Time_Body_Gyro_Jerk_Magnitude_StdDev
+* Frequency_Body_Accelerometer_Mean_X-axis
+* Frequency_Body_Accelerometer_Mean_Y-axis
+* Frequency_Body_Accelerometer_Mean_Z-axis
+* Frequency_Body_Accelerometer_StdDev_X-axis
+* Frequency_Body_Accelerometer_StdDev_Y-axis
+* Frequency_Body_Accelerometer_StdDev_Z-axis
+* Frequency_Body_Accelerometer_Jerk_Mean_X-axis
+* Frequency_Body_Accelerometer_Jerk_Mean_Y-axis
+* Frequency_Body_Accelerometer_Jerk_Mean_Z-axis
+* Frequency_Body_Accelerometer_Jerk_StdDev_X-axis
+* Frequency_Body_Accelerometer_Jerk_StdDev_Y-axis
+* Frequency_Body_Accelerometer_Jerk_StdDev_Z-axis
+* Frequency_Body_Gyro_Mean_X-axis
+* Frequency_Body_Gyro_Mean_Y-axis
+* Frequency_Body_Gyro_Mean_Z-axis
+* Frequency_Body_Gyro_StdDev_X-axis
+* Frequency_Body_Gyro_StdDev_Y-axis
+* Frequency_Body_Gyro_StdDev_Z-axis
+* Frequency_Body_Accelerometer_Magnitude_Mean
+* Frequency_Body_Accelerometer_Magnitude_StdDev
+* Frequency_BodyBody_Accelerometer_Jerk_Magnitude_Mean
+* Frequency_BodyBody_Accelerometer_Jerk_Magnitude_StdDev
+* Frequency_BodyBody_Gyro_Magnitude_Mean
+* Frequency_BodyBody_Gyro_Magnitude_StdDev
+* Frequency_BodyBody_Gyro_Jerk_Magnitude_Mean
+* Frequency_BodyBody_Gyro_Jerk_Magnitude_StdDev
 ### Value
 The value of the measurement for a given subject and activity.
 
